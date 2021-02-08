@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>jQuery Test page</title>
+</head>
+
+<body>
+    <h1>jQuery Test Page</h1>
+    <div id="myDiv">This is my div
+        <ul>
+            <li>I'm no1 list item!</li>
+            <li>I'm no1 list item!</li>
+            <li>I'm no1 list item!</li>
+            <li>I'm no1 list item!</li>
+            <li>I'm no1 list item!</li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(function () {
+        // alert("Just a $ sign");
+        /*
+        $("div#myDiv").css("border", "2px solid red");
+        $("div#myDiv").css("background-color", "yellow");
+        $("div#myDiv").append(". This gets added to myDiv");
+        */
+        /*
+        let thisDiv = $("div#myDiv");
+
+        thisDiv
+            .fadeOut()
+            .css("border", "3px solid red")
+            .css("background-color", "yellow");
+        */   
+        $("div#myDiv li:even").css("background-color", "yellow");
+        $("div#myDiv").hide().fadeIn(5000, function(){
+            $("div#myDiv li").each(function(){
+                $(this).slideDown(2000);
+            });
+        });
+
+    });
+        // alert("This is not jQuery");
+
+</script>
+
+</html>
