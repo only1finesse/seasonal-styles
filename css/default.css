@@ -6,7 +6,8 @@ body {
 	max-width:960px; /* keeps from getting too large on wide screen */
 	width:90%; /* shrink to fit screen */
 	margin:auto; /* center in html element */
-	background-color:#fff;
+	background-image: linear-gradient(to right, rgba(221, 129, 201, 3), rgb(224, 222, 96));
+	/* background-image: linear-gradient(to right,rgb(205, 160, 236), rgb(78, 154, 241) );	 */
 	padding:20px;
 	min-height:100%; /* keeps from getting too large on wide screen */
 	}
